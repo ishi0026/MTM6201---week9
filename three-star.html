@@ -66,10 +66,10 @@
       <section id="about" class="bg-secondary py-2">
         <div class="container-xl">
           <div class="row">
-            <div class="col-sn">
+            <div class="col-sm">
               <img src="images/about-us.jpg" alt="office ping-pong table" class="img-fluid">
             </div>
-            <div class="col-sn">
+            <div class="col-sm">
               <h2 class="display-4">About Us</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut nesciunt odit quam iste, unde dolorem dicta labore sapiente alias accusamus iusto. Fugit et quasi sequi aliquam nobis voluptas perferendis.
               </p>
@@ -144,8 +144,90 @@
             </div><!--closes .card-body-->
           </div><!--closes .card-->
          </div><!--closes .col-md-->
-      </div>
+      </div><!--closes .row-->
     </section> 
+    <!-- VISION section -->
+    <section class="vision bg-dark text-light py-4">
+      <div class="container-xl">
+        <h2 class="display-4">Our Vision</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit earum in inventore fugiat! Distinctio corrupti sint dolore numquam dignissimos, rem obcaecati molestias hic harum sit facilis animi explicabo deleniti officiis!</p>
+        <a href="#" class="btn btn-dark border border-primary rounded-0 p-3">
+          Learn More<i class="bi bi-caret-right-fill"></i></a>
+      </div>
+    </section>
+    <!-- mobile はカードに見えるが、カードはどのレイアウトでもカードになってしまう。つまりPCのデザインが再現できないので、各エリアをカラムとして作成する -->
+
+    <!--Our Team section-->
+    <section class="container-xl my-xxl-4" id="team">
+      <h2 class="display-4">Our Team</h2>
+      <div class="row row-cols-md-2 g-0"><!--g(ガター)はカラム間のパディングで、Bootstrap グリッドで使用-->
+        <div>
+          <img src="images/john.jpg" alt="image of John" class="img-fluid w-100">
+        </div><!-- closes .image div-->
+        <div class="bg-secondary py-4 px-2">
+          <h3>John Doe</h3>
+          <p class="h6 border-bottom border-primary border-3">CEO and Co-Owner</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vitae, expedita facere eius praesentium deleniti iusto! Pariatur, excepturi quibusdam, est, veniam quas similique facilis alias ut quisquam consequuntur provident ullam!</p>
+        </div><!-- closes .info div-->
+        <div class="order-md-last mt-2 mt-md-0"><!--順番を後ろにする margintopをmd sizeのときのみ使う-->
+          <img src="images/bob.jpg" alt="image of bob" class="img-fluid w-100">
+        </div><!-- closes .image div-->
+        <div class="bg-secondary py-4 px-2">
+          <h3>Bob Rite</h3>
+          <p class="h6 border-bottom border-primary border-3">CEO and Co-Owner</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vitae, expedita facere eius praesentium deleniti iusto! Pariatur, excepturi quibusdam, est, veniam quas similique facilis alias ut quisquam consequuntur provident ullam!</p>
+        </div><!-- closes .info div-->
+      </div><!-- closes .row-->
+    </section>
+    <!--Contact Section-->
+    <section class="container-xl my-4" id="contact">
+      <h2 class="display-4">Contact Us</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <h3>Send us a message</h3><!--https://getbootstrap.com/docs/5.2/forms/overview/-->
+          <form>
+            <div class="mb-3">
+              <label for="fullname" class="form-label">Full Name</label>
+              <input type="text" class="form-control rounded-0 border-dark" id="fullname">
+            </div>
+            <div class="mb-3">
+              <label for="useremail" class="form-label">Email address</label>
+              <input type="email" class="form-control rounded-0 border-dark" id="useremail">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control rounded-0 border-dark" name="message" id="message" cols="30" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark rounded-0 text-bg-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-12 order-md-last">
+          <h3>Hours of Opreation</h3><!--https://getbootstrap.com/docs/5.2/content/tables/-->
+          <table class="table table-bordered border-dark">
+            <thread>
+              <tr class="bg-secondary text-center">
+                <th>Days</th>
+                <th>Hours</th>
+              </tr>
+            </thread>
+            <tbody>
+              <tr>
+              <td>Monday-Friday</td>
+              <td>9 AM - 6 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday-Sunday</td>
+                <td>Closed</td>
+                </tr>
+            </tdoby>
+          </table>
+        </div>
+        <div class="col-md-6"></div>
+          <h3>Location</h3>
+          [add map]  
+      </div>
+    </section>
+
     </main>
 
 
